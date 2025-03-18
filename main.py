@@ -15,7 +15,7 @@ def get_code_from_deepseek(prompt):
         model="deepseek-reasoner",
         messages=[{
             "role": "user",
-            "content": f"{prompt}\n请用C++实现最深刻本质的解决方案。要求：\n1. 仅返回代码\n2. 不要注释\n3. 使用现代C++特性\n4. 考虑极端边界条件\n5. 优化时间和空间复杂度\n6. 包含错误处理机制"
+            "content": f"{prompt}\n要求：\n1. 仅返回代码\n2. 不要注释\n3. 使用现代C++特性\n4. 优化时间和空间复杂度\n5.满足题目要求和数据要求\n"
         }],
         temperature=0.3,
         stream=False
